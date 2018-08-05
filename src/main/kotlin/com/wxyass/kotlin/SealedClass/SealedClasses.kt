@@ -13,6 +13,7 @@ sealed class PlayerCmd {
     object Resume: PlayerCmd()
 
     object Stop: PlayerCmd()
+
 }
 
 enum class PlayerState{
