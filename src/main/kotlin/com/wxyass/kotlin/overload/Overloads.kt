@@ -6,7 +6,7 @@ import java.util.*
  * Created by benny on 4/4/17.
  */
 class Overloads{
-    @JvmOverloads
+    @JvmOverloads // @JvmOverloads 可在java中调用不传参数的a()
     fun a(int: Int = 0): Int{
         return int
     }

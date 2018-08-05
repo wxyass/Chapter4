@@ -1,6 +1,7 @@
 package com.wxyass.kotlin.innerclass
 
 /**
+ * 内部类
  * Created by benny on 4/4/17.
  */
 open class Outter{

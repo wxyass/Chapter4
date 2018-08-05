@@ -10,18 +10,21 @@ fun main(args: Array<String>) {
     println(Latitude.TAG)
 }
 
+// 纬度
 class Latitude private constructor(val value: Double){
+    // 这个类的伴生对象
     companion object{
-        @JvmStatic
+        @JvmStatic // @JvmStatic 便于在java中调用
         fun ofDouble(double: Double): Latitude{
             return Latitude(double)
         }
 
+        // 相当于java中静态方法
         fun ofLatitude(latitude: Latitude): Latitude{
             return Latitude(latitude.value)
         }
 
-        @JvmField
+        @JvmField // @JvmField 便于在java中调用
         val TAG: String = "Latitude"
     }
 }

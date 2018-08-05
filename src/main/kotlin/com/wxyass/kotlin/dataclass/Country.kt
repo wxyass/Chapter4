@@ -3,7 +3,8 @@ package com.wxyass.kotlin.dataclass
 import com.wxyass.kotlin.annotations.PoKo
 
 /**
- * Created by benny on 4/4/17.
+ * 数据类
+ * Created by wxyass on 2/6/18.
  */
 @PoKo
 data class Country(val id: Int, val name: String)
@@ -35,8 +36,7 @@ fun main(args: Array<String>) {
     println(id)
     println(name)
 
-
-//    val componentX = ComponentX()
-//    val (a, b, c, d) = componentX
-//    println("$a $b$c$d")
+    val componentX = ComponentX()
+    val (a, b, c, d) = componentX
+    println("$a $b$c$d")
 }

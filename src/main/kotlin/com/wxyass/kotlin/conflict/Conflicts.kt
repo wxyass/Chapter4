@@ -1,20 +1,25 @@
 package com.wxyass.kotlin.conflict
 
 /**
+ * 当接口的签名一样(方法名一样,参数列表一样),返回值类型也一样的处理方法,使用super<类名>.方法名
  * Created by benny on 4/3/17.
  */
+// 定义一个抽象父类
 abstract class A{
     open fun x(): Int = 5
 }
 
+// 定义接口B
 interface B{
     fun x(): Int = 1
 }
 
+// 定义皆苦C
 interface C{
     fun x(): Int = 0
 }
 
+// D 继承类,实现接口
 class D(var y: Int = 0): A(), B, C{
 
     override fun x(): Int {

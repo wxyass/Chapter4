@@ -3,6 +3,7 @@ package com.wxyass.kotlin.delegates
 import kotlin.reflect.KProperty
 
 /**
+ * 属性代理
  * Created by benny on 4/4/17.
  */
 class Delegates{

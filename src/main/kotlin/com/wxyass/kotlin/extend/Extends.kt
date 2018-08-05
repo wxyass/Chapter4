@@ -4,9 +4,9 @@ package com.wxyass.kotlin.extend
  * Created by benny on 4/4/17.
  */
 fun main(args: Array<String>) {
-//    println("abc" * 16)
-//    "abc".b = 5
-//    println("abc".b)
+    println("abc" * 16)
+    "abc".b = 5
+    println("abc".b)
 
     println("*" * 16)
 }
